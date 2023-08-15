@@ -1,0 +1,100 @@
+/* Global Rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "cairo", sans-serif;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+}
+/* Small */
+@media (width >= 768px) {
+	.container {
+		width: 750px;
+	}
+}
+/* Meduim */
+@media (width >= 992px) {
+	.container {
+		width: 970px;
+	}
+}
+/* Large */
+@media (width >= 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+/* Global Rules */
+/* Components */
+/* Components */
+/* Header */
+.header {
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	background-color: white;
+}
+.header__search {
+	margin-right: auto;
+	position: relative;
+}
+.header__search::before {
+	content: "\f002";
+	font-family: "font awesome 5 free";
+	font-weight: 900;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.header__search-input {
+	padding: 10px 10px 10px 35px;
+	border-radius: 10px;
+	font-size: 14px;
+	width: 170px;
+	transition: width 0.3s;
+}
+.header__search-input:focus,
+.header__search-input:active {
+	width: 200px;
+	outline: none;
+
+	&::placeholder {
+		opacity: 0;
+	}
+}
+.header__notification {
+	font-size: 20px;
+	margin-right: 20px;
+	position: relative;
+}
+.header__notification::after {
+	content: "";
+	position: absolute;
+	background-color: red;
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	right: -2px;
+	top: -5px;
+}
+.header__profile {
+	width: 30px;
+}
+/* Header */
