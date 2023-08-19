@@ -4,6 +4,15 @@
 	--main-padding: 20px;
 
 	--main-color: #0075ff;
+	--main-color-alt: #066feb;
+	--main-color-green: #22c55e;
+	--main-color-yellow: #f59e0b;
+	--main-color-red: #f44336;
+
+	--main-color-shade: 0, 117, 255;
+	--main-color-green-shade: 34, 197, 94;
+	--main-color-yellow-shade: 245, 158, 11;
+	--main-color-red-shade: 244, 67, 54;
 }
 /* Variables */
 /* Global Rules */
@@ -54,6 +63,12 @@ a {
 	width: 50px;
 }
 
+.section {
+	background-color: white;
+	border-radius: 10px;
+	padding: var(--main-padding);
+}
+
 .section-title {
 	font-size: 30px;
 	margin-bottom: 30px;
@@ -64,6 +79,15 @@ a {
 	margin-top: -22px;
 	margin-bottom: 20px;
 	font-size: 18px;
+}
+
+.btn {
+	display: block;
+	width: fit-content;
+	color: white;
+	padding: 4px 10px;
+	border: none;
+	border-radius: 5px;
 }
 /* Components */
 /* Page */

@@ -101,7 +101,8 @@
 				<main>
 					<h1 class="main-title">Dashboard</h1>
 					<div class="main-content">
-						<div class="welcome">
+						<!-- Welcome -->
+						<div class="welcome section">
 							<div class="welcome__header">
 								<div class="text">
 									<h2 class="section-title">welcome</h2>
@@ -130,23 +131,127 @@
 									<p class="property">Earned</p>
 								</div>
 							</div>
-							<a class="welcome__profile-btn" href="profile.html">
+							<a
+								class="welcome__profile-btn btn"
+								href="profile.html"
+							>
 								Profile
 							</a>
 						</div>
-						<div class="quick-draft"></div>
-						<div class="targets"></div>
-						<div class="stats"></div>
-						<div class="news"></div>
-						<div class="tasks"></div>
-						<div class="top-search"></div>
-						<div class="upload"></div>
-						<div class="progress"></div>
-						<div class="reminders"></div>
-						<div class="latest-post"></div>
-						<div class="social-stats"></div>
+						<!-- Welcome -->
+						<!-- Quick Draft -->
+						<div class="quick-draft section">
+							<h2 class="section-title">Quick Draft</h2>
+							<p class="section-subtitle">
+								Write A Draft For Your Ideas
+							</p>
+							<form class="quick-draft__form" action="">
+								<input
+									class="quick-draft__title-input"
+									type="text"
+									name="title"
+									placeholder="Title"
+								/>
+								<textarea
+									class="quick-draft__thought-input"
+									name="thought"
+									placeholder="Your Thought"
+								></textarea>
+								<input
+									class="quick-draft__submit-btn btn"
+									type="submit"
+									value="Save"
+								/>
+							</form>
+						</div>
+						<!-- Quick Draft -->
+						<!-- Yearly Targets -->
+						<div class="targets section">
+							<h2 class="section-title">Yearly Targets</h2>
+							<p class="section-subtitle">Targets Of The Year</p>
+							<div class="targets__show">
+								<div class="targets__target money">
+									<i
+										class="fa-solid fa-dollar-sign target__icon"
+									></i>
+									<div class="target__info">
+										<p class="target__category">Money</p>
+										<p class="target__value">$20.000</p>
+										<div class="target__progress-bar">
+											<div
+												class="target__progress"
+												style="width: 80%"
+												data-progress="80%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="targets__target projects">
+									<i
+										class="fa-solid fa-code target__icon"
+									></i>
+									<div class="target__info">
+										<p class="target__category">Projects</p>
+										<p class="target__value">25</p>
+										<div class="target__progress-bar">
+											<div
+												class="target__progress"
+												style="width: 55%"
+												data-progress="55%"
+											></div>
+										</div>
+									</div>
+								</div>
+								<div class="targets__target team">
+									<i
+										class="fa-solid fa-user target__icon"
+									></i>
+									<div class="target__info">
+										<p class="target__category">Team</p>
+										<p class="target__value">12</p>
+										<div class="target__progress-bar">
+											<div
+												class="target__progress"
+												style="width: 75%"
+												data-progress="75%"
+											></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Yearly Targets -->
+						<!-- Stats -->
+						<div class="stats section"></div>
+						<!-- Stats -->
+						<!-- News -->
+						<div class="news section"></div>
+						<!-- News -->
+						<!-- Tasks -->
+						<div class="tasks section"></div>
+						<!-- Tasks -->
+						<!-- Top Search -->
+						<div class="top-search section"></div>
+						<!-- Top Search -->
+						<!-- Upload -->
+						<div class="upload section"></div>
+						<!-- Upload -->
+						<!-- Progress -->
+						<div class="progress section"></div>
+						<!-- Progress -->
+						<!-- Reminders -->
+						<div class="reminders section"></div>
+						<!-- Reminders -->
+						<!-- Latest Post -->
+						<div class="latest-post section"></div>
+						<!-- Latest Post -->
+						<!-- Social Stats -->
+						<div class="social-stats section"></div>
+						<!-- Social Stats -->
 					</div>
-					<div class="projects"></div>
+					<!-- Projects -->
+					<div class="projects section"></div>
+					<!-- Projects -->
 				</main>
 				<!-- Main -->
 			</div>
