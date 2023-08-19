@@ -265,3 +265,24 @@
 	}
 }
 /* Tasks */
+/* Top Search */
+.top-search__row {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0;
+}
+.top-search__row-property {
+	font-size: 18px;
+	font-weight: 500;
+}
+.top-search__row-value {
+	font-size: 14px;
+	background-color: var(--secondary-color);
+	padding: 4px 10px;
+	border-radius: 5px;
+}
+.top-search__header-title {
+	color: #777;
+	font-size: 18px;
+}
+/* Top Search */
