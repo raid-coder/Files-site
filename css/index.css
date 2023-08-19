@@ -286,3 +286,30 @@
 	font-size: 18px;
 }
 /* Top Search */
+/* Uploads */
+.upload__file {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	&:not(:last-child) {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid var(--secondary-color);
+	}
+}
+.upload__file-image {
+	width: 40px;
+}
+.upload__file-name {
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+.upload__file-author {
+	font-size: 15px;
+	color: #777;
+}
+.upload__file-size {
+	margin-left: auto;
+}
+/* Uploads */
