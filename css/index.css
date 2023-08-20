@@ -313,3 +313,69 @@
 	margin-left: auto;
 }
 /* Uploads */
+/* Progress */
+.progress {
+	position: relative;
+}
+.progress__content {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	position: relative;
+}
+.progress__content::before {
+	content: "";
+	position: absolute;
+	background-color: var(--main-color);
+	left: 13px;
+	width: 2px;
+	height: 100%;
+	transform: translateX(-50%);
+}
+.progress__step {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 15px;
+}
+.progress__circle {
+	box-sizing: content-box;
+	border-radius: 50%;
+	width: 23px;
+	aspect-ratio: 1/1;
+	border: 2px solid var(--main-color);
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.progress__circle::before {
+	content: "";
+	box-sizing: content-box;
+	width: 20px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background-color: white;
+}
+.progress__step.finished .progress__circle::before {
+	background-color: var(--main-color);
+}
+.progress__step.current .progress__circle::before {
+	background-color: var(--main-color);
+	animation: fade 0.7s infinite alternate;
+}
+.progress__image {
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+	width: 150px;
+	opacity: 0.15;
+}
+/* Progress */
+/* Animations */
+@keyframes fade {
+	to {
+		background-color: white;
+	}
+}
+/* Animations */
