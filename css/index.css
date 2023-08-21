@@ -393,6 +393,34 @@
 	color: #777;
 }
 /* Reminders */
+/* Latest Post */
+.latest-post__author {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.latest-post__author-image {
+	width: 50px;
+}
+.latest-post__author-name {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.latest-post__text {
+	margin-block: 20px;
+	padding-block: 20px;
+	border-block: 1px solid var(--secondary-color);
+	font-size: 17px;
+	line-height: 1.8;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+.latest-post__stats {
+	display: flex;
+	justify-content: space-between;
+	color: #777;
+}
+/* Latest Post */
 /* Animations */
 @keyframes fade {
 	to {
