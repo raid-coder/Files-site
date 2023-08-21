@@ -234,6 +234,12 @@
 		border-bottom: 1px solid var(--secondary-color);
 	}
 }
+@media (max-width: 767px) {
+	.news__article {
+		flex-direction: column;
+		text-align: center;
+	}
+}
 .news__article-image {
 	width: 100px;
 	border-radius: 5px;
@@ -242,11 +248,15 @@
 	margin-bottom: 8px;
 }
 .news__article-date {
-	margin-left: auto;
 	background-color: var(--secondary-color);
 	padding: 5px 10px;
 	border-radius: 5px;
 	font-size: 14px;
+}
+@media (min-width: 768px) {
+	.news__article-date {
+		margin-left: auto;
+	}
 }
 /* News */
 /* Tasks */
