@@ -96,6 +96,23 @@ a {
 		display: none;
 	}
 }
+
+.c-var-blue {
+	--color: var(--main-color);
+}
+.c-var-green {
+	--color: var(--main-color-green);
+}
+.c-var-red {
+	--color: var(--main-color-red);
+}
+.c-var-yellow {
+	--color: var(--main-color-yellow);
+}
+
+.bg-var {
+	background-color: var(--color);
+}
 /* framework Classes */
 /* Page */
 .page {

@@ -364,6 +364,35 @@
 	opacity: 0.15;
 }
 /* Progress */
+/* Reminders */
+.reminders__content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.reminders__reminder {
+	display: flex;
+	gap: 15px;
+}
+.reminder__circle {
+	border-radius: 50%;
+	width: 15px;
+	aspect-ratio: 1/1;
+	align-self: center;
+}
+.reminder__line {
+	width: 2px;
+}
+.reminder__title {
+	font-weight: bold;
+
+	margin-bottom: 10px;
+}
+.reminder__time {
+	font-size: 14px;
+	color: #777;
+}
+/* Reminders */
 /* Animations */
 @keyframes fade {
 	to {
