@@ -469,6 +469,58 @@
 	margin-inline: auto 10px;
 }
 /* Social Media Stats */
+/* Projects */
+.projects__content {
+	width: 100%;
+	border-collapse: collapse;
+}
+.projects__content td,
+.projects__content th {
+	padding: 20px;
+	text-align: left;
+	border: 1px solid var(--secondary-color);
+}
+.projects__content th {
+	background-color: var(--secondary-color);
+}
+.projects__content .project-team {
+	display: flex;
+}
+.project-team img {
+	width: 29px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.project-team img:not(:first-child) {
+	margin-left: -15px;
+}
+.projects__content .project-state {
+	&.pending {
+		--color: var(--main-color-yellow);
+		&::before {
+			content: "Pending";
+		}
+	}
+	&.in-progress {
+		--color: var(--main-color);
+		&::before {
+			content: "In Progress";
+		}
+	}
+	&.completed {
+		--color: var(--main-color-green);
+		&::before {
+			content: "Completed";
+		}
+	}
+	&.rejected {
+		--color: var(--main-color-red);
+		&::before {
+			content: "Rejected";
+		}
+	}
+}
+/* Projects */
 /* Animations */
 @keyframes fade {
 	to {
