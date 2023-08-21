@@ -504,19 +504,29 @@
 /* Social Media Stats */
 /* Projects */
 .projects__content {
+	overflow: auto;
+}
+.projects__table {
 	width: 100%;
+	min-width: 800px;
 	border-collapse: collapse;
 }
-.projects__content td,
-.projects__content th {
+.projects__table td,
+.projects__table th {
 	padding: 20px;
 	text-align: left;
 	border: 1px solid var(--secondary-color);
 }
-.projects__content th {
+.projects__table th {
 	background-color: var(--secondary-color);
 }
-.projects__content .project-team {
+.projects__table td {
+	transition: background-color 0.3s;
+}
+.projects__table tr:hover td {
+	background-color: #faf7f7;
+}
+.projects__table .project-team {
 	display: flex;
 }
 .project-team img {
@@ -527,7 +537,7 @@
 .project-team img:not(:first-child) {
 	margin-left: -15px;
 }
-.projects__content .project-state {
+.projects__table .project-state {
 	&.pending {
 		--color: var(--main-color-yellow);
 		&::before {
