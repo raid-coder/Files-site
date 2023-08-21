@@ -339,28 +339,20 @@
 	gap: 15px;
 }
 .progress__circle {
-	box-sizing: content-box;
 	border-radius: 50%;
-	width: 23px;
+	width: 26px;
 	aspect-ratio: 1/1;
-	border: 2px solid var(--main-color);
+	border: 2px solid white;
 	background-color: white;
+	outline: 2px solid var(--main-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.progress__circle::before {
-	content: "";
-	box-sizing: content-box;
-	width: 20px;
-	aspect-ratio: 1/1;
-	border-radius: 50%;
-	background-color: white;
-}
-.progress__step.finished .progress__circle::before {
+.progress__step.finished .progress__circle {
 	background-color: var(--main-color);
 }
-.progress__step.current .progress__circle::before {
+.progress__step.current .progress__circle {
 	background-color: var(--main-color);
 	animation: fade 0.7s infinite alternate;
 }
