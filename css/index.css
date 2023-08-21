@@ -421,6 +421,54 @@
 	color: #777;
 }
 /* Latest Post */
+/* Social Media Stats */
+.social-stats__content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.social-stats__stat {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.social-stats__stat.twitter {
+	--color: #1da1f2;
+	background-color: #d2ecfc;
+}
+.social-stats__stat.facebook {
+	--color: #1877f2;
+	background-color: #d1e4fc;
+}
+.social-stats__stat.youtube {
+	--color: #ff0000;
+	background-color: #ffcccc;
+}
+.social-stats__stat.linkedin {
+	--color: #0077b5;
+	background-color: #cce4f0;
+}
+.social-stats__stat-icon {
+	color: white;
+	background-color: var(--color);
+	width: 50px;
+	aspect-ratio: 1/1;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: rotate 0.3s;
+}
+.social-stats__stat-icon:hover {
+	rotate: 5deg;
+}
+.social-stats__stat-number {
+	color: var(--color);
+}
+.social-stats__stat-btn {
+	margin-inline: auto 10px;
+}
+/* Social Media Stats */
 /* Animations */
 @keyframes fade {
 	to {
