@@ -133,6 +133,7 @@ aside {
 	position: relative;
 	padding: 20px;
 	min-height: 100svh;
+	flex-shrink: 0;
 }
 @media (max-width: 767px) {
 	aside {
@@ -200,6 +201,11 @@ aside {
 .aside__links li a i {
 	width: 30px;
 	text-align: center;
+}
+@media (max-width: 767px) {
+	.aside__links li a i {
+		font-size: 20px;
+	}
 }
 /* Aside */
 /* Header */
