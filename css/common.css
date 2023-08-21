@@ -137,8 +137,8 @@ aside {
 }
 @media (max-width: 767px) {
 	aside {
-		width: 80px;
-		padding: 10px;
+		width: 50px;
+		padding: 0;
 		text-align: center;
 	}
 }
@@ -153,8 +153,9 @@ aside {
 }
 @media (max-width: 767px) {
 	.logo {
-		font-size: 16px;
-		margin: 10px 0;
+		font-size: 13px;
+		margin: 10px auto;
+		padding: 0;
 	}
 }
 @media (min-width: 768px) {
