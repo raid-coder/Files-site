@@ -11,3 +11,67 @@
 	}
 }
 /* Main */
+/* Control */
+.control__setting {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.control .setting-name {
+	font-weight: 500;
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+.control .setting-description {
+	font-size: 14px;
+	color: #777;
+}
+.control__setting .setting-checkbox {
+	appearance: none;
+}
+.control__setting .toggle-switch {
+	height: 30px;
+	width: 70px;
+	background-color: #ccc;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	position: relative;
+}
+.control__setting .toggle-switch::before {
+	content: "\f00d";
+	font-family: var(--fa-style-family-classic);
+	font-weight: 900;
+	background-color: white;
+	color: #ccc;
+	position: absolute;
+	left: 5px;
+	height: 21px;
+	top: 5px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: left 0.3s, color 0.3s;
+}
+.control__setting .setting-checkbox:checked + .toggle-switch {
+	background-color: var(--main-color);
+}
+.control__setting .setting-checkbox:checked + .toggle-switch::before {
+	color: var(--main-color);
+	left: 45px;
+	content: "\f00c";
+}
+.control-input {
+	resize: none;
+	width: 100%;
+	height: 150px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 1;
+	font-family: monospace;
+}
+/* Control */
