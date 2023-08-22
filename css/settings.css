@@ -75,3 +75,32 @@
 	font-family: monospace;
 }
 /* Control */
+/* Settings */
+.info input {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 6px;
+	border: 1px solid #aaa;
+}
+.info > input {
+	margin-bottom: 20px;
+}
+.info .email-change {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.info .email-change .info-change {
+	font-size: 18px;
+	color: var(--main-color);
+}
+.info .email-change .email-input {
+	background-color: #f0f4f8;
+	cursor: not-allowed;
+}
+.info label {
+	margin-bottom: 10px;
+	display: block;
+}
+/* Settings */
