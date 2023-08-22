@@ -26,10 +26,10 @@
 	font-size: 14px;
 	color: #777;
 }
-.control__setting .setting-checkbox {
-	appearance: none;
+.setting-checkbox {
+	display: none;
 }
-.control__setting .toggle-switch {
+.toggle-switch {
 	height: 30px;
 	width: 70px;
 	background-color: #ccc;
@@ -38,7 +38,7 @@
 	transition: background-color 0.3s;
 	position: relative;
 }
-.control__setting .toggle-switch::before {
+.toggle-switch::before {
 	content: "\f00d";
 	font-family: var(--fa-style-family-classic);
 	font-weight: 900;
@@ -55,10 +55,10 @@
 	align-items: center;
 	transition: left 0.3s, color 0.3s;
 }
-.control__setting .setting-checkbox:checked + .toggle-switch {
+.setting-checkbox:checked + .toggle-switch {
 	background-color: var(--main-color);
 }
-.control__setting .setting-checkbox:checked + .toggle-switch::before {
+.setting-checkbox:checked + .toggle-switch::before {
 	color: var(--main-color);
 	left: 45px;
 	content: "\f00c";
@@ -104,3 +104,31 @@
 	display: block;
 }
 /* Settings */
+/* Security */
+.security .box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-block: 20px;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid #ccc;
+	}
+}
+.security .box .name {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.security .box .description {
+	font-size: 14px;
+	color: #777;
+}
+.security .box .change {
+	background-color: var(--main-color);
+}
+.security .box .devices {
+	background-color: #eee;
+	color: black;
+}
+/* Security */
