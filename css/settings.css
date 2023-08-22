@@ -132,3 +132,45 @@
 	color: black;
 }
 /* Security */
+/* Social Info */
+.social .wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.social .wrapper .box {
+	display: flex;
+}
+.social .wrapper .box .icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-right: none;
+	color: #777;
+	transition: color 0.3s, border-color 0.3s;
+}
+.social .wrapper .box input {
+	flex: 1;
+	height: 40px;
+	padding-inline: 10px;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	transition: border-color 0.3s;
+}
+.social .wrapper .box input:focus,
+.social .wrapper .box input:active {
+	outline: none;
+	border-color: black;
+}
+.social .wrapper .box:focus-within {
+	.icon {
+		border-color: black;
+		color: black;
+	}
+}
+/* Social Info */
