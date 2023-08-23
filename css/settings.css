@@ -174,3 +174,51 @@
 	}
 }
 /* Social Info */
+/* Widgets */
+.widgets .box:not(:last-child) {
+	margin-bottom: 15px;
+}
+.widgets .box .checkbox {
+	display: none;
+}
+.widgets .box label {
+	font-size: 20px;
+	cursor: pointer;
+	padding-left: 30px;
+	position: relative;
+}
+.widgets .box label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #aaa;
+	top: 50%;
+	translate: 0 -50%;
+	border-radius: 4px;
+}
+.widgets .box label::after {
+	content: "\f00c";
+	font-family: var(--fa-style-family-classic);
+	font-weight: 900;
+	color: white;
+	font-size: 13px;
+	position: absolute;
+	left: 0;
+	background-color: var(--main-color);
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	translate: 0 -50%;
+	border-radius: 4px;
+	transform: scale(0) rotate(360deg);
+	transition: transform 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.widgets .box .checkbox:checked + label::after {
+	transform: scale(1) rotate(0);
+}
+/* Widgets */
