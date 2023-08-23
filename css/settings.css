@@ -222,3 +222,69 @@
 	transform: scale(1) rotate(0);
 }
 /* Widgets */
+/* Backup */
+.backup input {
+	display: none;
+}
+.backup .time label {
+	margin-block: 15px;
+	padding-left: 30px;
+	position: relative;
+	width: fit-content;
+}
+.backup .time label::before,
+.backup .time label::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+}
+.backup .time label::before {
+	border: 1px solid #aaa;
+	width: 20px;
+	height: 20px;
+	left: 0;
+	transition: border-color 0.3s;
+}
+.backup .time label::after {
+	background-color: var(--main-color);
+	width: 10px;
+	height: 10px;
+	left: 5px;
+	transition: scale 0.3s;
+	transform-origin: top;
+	scale: 0;
+}
+.backup .time input:checked + label::before {
+	border-color: var(--main-color);
+}
+.backup .time input:checked + label::after {
+	scale: 1;
+}
+.backup label {
+	display: block;
+	font-size: 20px;
+	cursor: pointer;
+}
+.backup .host {
+	display: flex;
+	gap: 10px;
+}
+.backup .host label {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 20px 0;
+	transition: color 0.3s, border-color 0.3s;
+}
+.backup .host input:checked + label {
+	color: var(--main-color);
+	border-color: var(--main-color);
+}
+
+/* Backup */
