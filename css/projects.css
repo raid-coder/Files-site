@@ -1,0 +1,114 @@
+/* Main */
+.main-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: var(--main-gap);
+}
+@media (max-width: 767px) {
+	.main-content {
+		grid-template-columns: 1fr;
+	}
+}
+/* Main */
+/* projects */
+.section {
+	position: relative;
+}
+.section h2 {
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.section .section-subtitle {
+	margin-bottom: 50px;
+}
+.section .team {
+	display: flex;
+	margin-bottom: 10px;
+}
+.section .team img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: relative;
+}
+.section .team li:not(:first-child) img {
+	margin-left: -15px;
+}
+.section .team img:hover {
+	z-index: 1;
+}
+.categories {
+	padding: 20px 0;
+	border-block: 1px solid var(--secondary-color);
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.categories span {
+	background-color: var(--secondary-color);
+	padding: 0px 8px;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 4px 6px;
+}
+.progress {
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width: 767px) {
+	.progress {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+}
+.progress .progress-bar {
+	width: 250px;
+	height: 8px;
+	background-color: #eee;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+
+	&.red span {
+		background-color: var(--main-color-red);
+	}
+	&.green span {
+		background-color: var(--main-color-green);
+	}
+	&.blue span {
+		background-color: var(--main-color);
+	}
+}
+@media (max-width: 767px) {
+	.progress .progress-bar {
+		width: 100%;
+	}
+}
+.progress .progress-bar span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	border-radius: 4px;
+}
+.progress .money {
+	color: #777;
+}
+.progress .money::before {
+	content: "$ ";
+}
+.date {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: #777;
+	font-size: 13px;
+	font-weight: 500;
+}
+/* projects */
