@@ -139,6 +139,19 @@
 }
 /* Profile */
 /* Skills */
+.skills .row {
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+	padding: 15px 0;
+}
+.skills .row:not(:last-child) {
+	border-bottom: 1px solid var(--secondary-color);
+}
+.skills .row .btn {
+	color: black;
+	background-color: var(--secondary-color);
+}
 /* Skills */
 /* Activities */
 .activities {
