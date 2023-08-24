@@ -271,6 +271,11 @@
 	display: flex;
 	gap: 10px;
 }
+@media (max-width: 767px) {
+	.backup .host {
+		flex-direction: column;
+	}
+}
 .backup .host label {
 	flex: 1;
 	display: flex;
