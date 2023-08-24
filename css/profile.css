@@ -1,0 +1,134 @@
+/* Main */
+.main-content {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+/* Main */
+/* Profile */
+.profile {
+	padding: 0;
+	display: flex;
+	align-items: center;
+	grid-column: span 3;
+}
+.profile .show {
+	padding: 20px 60px;
+	text-align: center;
+}
+.profile .show img {
+	width: 128px;
+	margin-bottom: 10px;
+}
+.profile .show h2 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.profile .show .lvl {
+	color: #777;
+	margin-bottom: 15px;
+}
+.profile .show .progress-bar {
+	background-color: var(--secondary-color);
+	height: 6px;
+	width: 100%;
+	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.profile .show .progress-bar .progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: var(--main-color);
+}
+.profile .show .rating {
+	margin-bottom: 10px;
+}
+.profile .show .rating i {
+	font-size: 14px;
+	color: #f59e0b;
+}
+.profile .show .rating-number {
+	font-size: 14px;
+	color: #777;
+}
+.profile .info {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	color: #777;
+}
+.profile .info > div {
+	padding: 20px;
+	transition: background-color 0.3s;
+}
+.profile .info > div:hover {
+	background-color: #f9f9f9;
+}
+.profile .info > div h4 {
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.profile .info > div .data {
+	margin-bottom: 10px;
+	display: flex;
+	padding-right: 100px;
+}
+.profile .info > div .data .bit {
+	flex: 1;
+}
+.profile .info > div .data .bit .value {
+	color: black;
+	font-weight: 500;
+}
+.checkbox {
+	display: none;
+}
+.toggle-switch {
+	height: 20px;
+	width: 70px;
+	background-color: #ccc;
+	border-radius: 25px;
+	border: 3px solid transparent;
+	cursor: pointer;
+	transition: background-color 0.3s, border-color 0.3s;
+	position: relative;
+}
+.toggle-switch::before {
+	content: "\f00d";
+	font-family: var(--fa-style-family-classic);
+	font-weight: 900;
+	font-size: 12px;
+	background-color: white;
+	color: #ccc;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	top: 0;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: left 0.3s, color 0.3s;
+}
+.checkbox:checked + .toggle-switch {
+	background-color: var(--main-color);
+	border-color: var(--main-color);
+}
+.checkbox:checked + .toggle-switch::before {
+	color: var(--main-color);
+	left: 50px;
+	content: "\f00c";
+}
+/* Profile */
+/* Skills */
+/* Skills */
+/* Activities */
+.activities {
+	grid-column: span 2;
+}
+/* Activities */
