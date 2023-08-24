@@ -60,10 +60,23 @@
 	flex-direction: column;
 	flex: 1;
 	color: #777;
+	position: relative;
+}
+.profile .info::before {
+	content: "";
+	background-color: var(--secondary-color);
+	position: absolute;
+	left: 0;
+	top: 60px;
+	bottom: 60px;
+	width: 1px;
 }
 .profile .info > div {
 	padding: 20px;
 	transition: background-color 0.3s;
+}
+.profile .info > div:not(:last-child) {
+	border-bottom: 1px solid #eee;
 }
 .profile .info > div:hover {
 	background-color: #f9f9f9;
