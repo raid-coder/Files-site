@@ -157,4 +157,36 @@
 .activities {
 	grid-column: span 2;
 }
+.activities .box {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 20px 0;
+}
+.activities .box:not(:last-child) {
+	border-bottom: 1px solid var(--secondary-color);
+}
+.activities .box img {
+	width: 64px;
+}
+.activities .box .info .category {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 18px;
+}
+.activities .box .info .description {
+	color: #777;
+}
+.activities .box .time {
+	margin-left: auto;
+	text-align: right;
+}
+.activities .box .time .clock {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 18px;
+}
+.activities .box .time .day {
+	color: #777;
+}
 /* Activities */
