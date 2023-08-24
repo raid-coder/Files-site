@@ -12,6 +12,12 @@
 	align-items: center;
 	grid-column: span 3;
 }
+@media (max-width: 991px) {
+	.profile {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
 .profile .show {
 	padding: 20px 60px;
 	text-align: center;
@@ -71,6 +77,11 @@
 	bottom: 60px;
 	width: 1px;
 }
+@media (max-width: 991px) {
+	.profile .info::before {
+		display: none;
+	}
+}
 .profile .info > div {
 	padding: 20px;
 	transition: background-color 0.3s;
@@ -89,6 +100,13 @@
 	margin-bottom: 10px;
 	display: flex;
 	padding-right: 100px;
+	gap: 10px;
+}
+@media (max-width: 1199px) {
+	.profile .info > div .data {
+		padding: 0;
+		flex-direction: column;
+	}
 }
 .profile .info > div .data .bit {
 	flex: 1;
@@ -139,6 +157,12 @@
 }
 /* Profile */
 /* Skills */
+@media (max-width: 991px) {
+	.skills {
+		grid-column: span 3;
+		text-align: center;
+	}
+}
 .skills .row {
 	display: flex;
 	gap: 5px;
@@ -156,6 +180,11 @@
 /* Activities */
 .activities {
 	grid-column: span 2;
+}
+@media (max-width: 991px) {
+	.activities {
+		grid-column: span 3;
+	}
 }
 .activities .box {
 	display: flex;
