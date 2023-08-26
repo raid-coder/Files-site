@@ -1,0 +1,77 @@
+/* Main */
+.main-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+@media (max-width: 767px) {
+	.main-content {
+		grid-template-columns: 1fr;
+	}
+}
+.section {
+	padding: 0;
+}
+/* Main */
+/* Courses */
+.box {
+	position: relative;
+	overflow: hidden;
+}
+.box .course-image {
+	width: 100%;
+}
+.box .text {
+	padding: 20px;
+}
+.box .text .course-title {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.box .text .course-description {
+	color: #777;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.box .text .info-holder {
+	position: relative;
+}
+.box .text .info-holder::before {
+	content: "";
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	width: calc(100% + 40px);
+	height: 1px;
+	background-color: var(--secondary-color);
+}
+.box .text .course-info {
+	margin: auto;
+	background-color: var(--main-color);
+	position: relative;
+}
+.box .text .course-stats {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #777;
+}
+.box .text .course-stats .sells::before {
+	content: "\f007";
+	font-family: var(--fa-style-family-classic);
+	font-weight: 400;
+	margin-right: 5px;
+}
+.box .text .course-stats .price::before {
+	content: "$";
+	margin-right: 5px;
+}
+.box .course-author {
+	position: absolute;
+	width: 64px;
+	border-radius: 50%;
+	border: 2px solid white;
+	left: 20px;
+	top: 20px;
+}
+/* Courses */
