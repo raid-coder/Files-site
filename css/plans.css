@@ -1,0 +1,90 @@
+/* Main */
+.main-content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 20px;
+}
+@media (max-width: 767px) {
+	.main-content {
+		grid-template-columns: 1fr;
+	}
+}
+/* Main */
+/* Plans */
+.plan {
+	border-radius: 0;
+}
+@media (max-width: 767px) {
+	.plan {
+		padding: 10px;
+	}
+}
+.plan .head {
+	color: white;
+	border: 3px solid white;
+	outline: 3px solid var(--color);
+	padding: 30px 0;
+	text-align: center;
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+.plan .head .offer {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.plan .head .price {
+	font-size: 40px;
+}
+.plan .head .price span {
+	font-size: 25px;
+	vertical-align: top;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.plan .features {
+	margin-bottom: 20px;
+}
+.plan .features li {
+	padding: 15px 0;
+	border-bottom: 1px solid var(--secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.plan .features li .feature::before {
+	font-family: var(--fa-style-family-classic);
+	font-weight: 900;
+	font-size: 18px;
+	margin-right: 10px;
+}
+.plan .features li.yes .feature::before {
+	content: "\f00c";
+	color: var(--main-color-green);
+}
+.plan .features li.no .feature::before {
+	content: "\f00d";
+	color: var(--main-color-red);
+}
+.plan .features li .info {
+	color: #777;
+	cursor: pointer;
+}
+.plan.is-current .join {
+	display: none;
+}
+@media (max-width: 767px) {
+	.plan .join {
+		width: 100%;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+.plan .current {
+	color: #777;
+	font-size: 18px;
+	text-align: center;
+}
+.plan:not(.is-current) .current {
+	display: none;
+}
+/* Plans */
